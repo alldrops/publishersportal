@@ -1,0 +1,1 @@
+$(function(){var e=$(".third_party_retail_price"),t=$(".wundrbooks_retail_price"),n=$(".third_party_apple_collects"),r=$(".third_party_wundr_receives"),i=$(".wundrbooks_wundr_receives"),s=$(".third_party_your_royalty"),o=$(".wundrbooks_your_royalty"),u=10});

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <!--script type="text/javascript" src="//use.typekit.net/rvj1lne.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script-->
+
+        <title>Wundr Publishing</title>
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" type="text/css" href="/style/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="/script/fancybox/jquery.fancybox.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic" rel="stylesheet" type="text/css">
+        
+        <link rel="stylesheet" type="text/css" href="/style/predef_blog.css"/>
+        <link rel="stylesheet" type="text/css" href="/style/global.css"/>
+        
+        <link rel="stylesheet" type="text/css" href="/publishersportal/style/global_publishers.css"/>
+        <link rel="stylesheet" type="text/css" href="/publishersportal/style/list-details.css"/>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/script/jquery.mask.min.js"></script>
+        <script type="text/javascript" src="/script/modernizr.custom.32962.js"></script>
+        <link rel="stylesheet" type="text/css" href="/style/fonts.css">
+
+        <script type="text/javascript">
+        
+        // var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
+        // if(is_firefox) {
+        //     alert("We are very sorry. We only support the latest versions of Safari and Chrome at this moment.")
+        //     window.location = "/notsupported/";
+        // }
+
+        (function(){
+            Modernizr.load({
+                test:Modernizr.flexbox,
+                nope: '/script/shims.js'
+            });
+            // $(function(){
+            //     var $form = $('#newsletter_form').submit(function(){
+            //         console.log($form.serialize());
+            //         $.ajax('/newsletter_signup?q=' + $form.serialize());
+            //         return false;
+            //     });
+
+            //     var $drop_down_nav = $('.drop_down_nav'), $drop_down_anchor = $('.drop_down_anchor a');
+            //     $drop_down_anchor.click(function(){
+            //         $drop_down_nav.toggleClass('shown');
+            //         return false;
+            //     });
+
+            //     var $link_categories_li = $('.link_categories > li');
+            //     $link_categories_li.each(function(index){
+            //         var $this = $(this);
+            //         $("h2", this).click(function(){
+            //             var hadShown = $this.hasClass('shown');
+            //             $link_categories_li.removeClass('shown');
+            //             if(!hadShown) $this.addClass('shown');
+            //         });
+            //     });
+            // });
+        }());
+        </script>
+        <script type='text/javascript' src='/script/fancybox/jquery.fancybox.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+          try {
+            if (navigator.appVersion.indexOf("Win")!=-1) {
+              if(!window.isIE) {
+                $('body').css('font-family', "'Source Sans Pro', sans-serif");
+              }
+            }
+          } catch (err) {
+
+          }
+        });
+        </script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class='nav_bar'>
+                   <h1>
+                        <a class="logo" href="http://wundrbooks.com"></a>
+                    </h1>               
+                    <a id="triggernav" href="#">MENU</a>
+                    <nav id="top-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">           
+                        <ul id="top-nav" class="nav sf-js-enabled">
+                            <li><a href="http://wundrbooks.com/create/" title="create">create</a></li>
+                            <li><a href="http://wundrbooks.com/publish/" title="publish">publish</a></li>
+                            <li><a href="http://wundrbooks.com/custom/" title="wundrpub">wundrpub</a></li>
+                            <li><a href="http://blogs.wundrbooks.com/" title="blog">blog</a></li>
+                            <li><a href="http://wundrbooks.com/coming_soon/" title="support">support</a></li>
+                            <li class="current-menu-ancestor current-menu-parent">
+                                <a href="http://wundrbooks.com/company/about/" title="company">company</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://wundrbooks.com/company/about/" title="about us">about us</a></li>
+                                    <li><a href="http://wundrbooks.com/company/team/" title="team">team</a></li>
+                                    <li><a href="http://wundrbooks.com/coming_soon/" title="press releases">press releases</a></li>
+                                    <li><a href="http://wundrbooks.com/coming_soon/" title="news">news</a></li>
+                                    <li><a href="http://wundrbooks.com/company/careers/" title="careers">careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://wundrbooks.com/contact" title="contact">contact</a></li>
+                        </ul>
+                        <ul id="top-right-nav" class="nav">
+                            <li><a href="http://wundrbooks.com/tour/">tour</a></li>
+                            <li><a href="http://wundrbooks.com/design/" class="nav-sell">sell</a></li>
+                            <li><a href="#">login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="stretchbox">
+                <article>
+                    <header class="pp-header">
+                        <h1><strong>publisher's</strong> portal</h1>
+                        <p class="subtitle">
+                            <span>your eBook content management system</span>
+                        </p>
+                    </header>
+                    <div class="info-bar">
+                        <div class="body_wrapper">
+                            
+                        </div>    
+                    </div>
+                    <div class="body_wrapper">
+                        <div class="profile-info">
+                            <div class="profile-picture">
+                                <img src="http://lorempixel.com/240/240/" alt="">
+                            </div>
+                            <p class="profile-name">John Doe</p>
+                            <a href="#" class="link-profile blue">Edit Profile Info</a>
+                            <a href="#" class="btn-profile cms active">CMS</a>
+                            <!-- <a href="#" class="btn-profile analytics">Analytics</a> -->
+                            <a href="#" class="btn-profile purchases">Purchases</a>
+                            <span class="horizontal-gray"></span>
+                            <h3 class="blue">You currently have:</h3>
+                            <ul>
+                                <li>uPub Free Credit(s): <span class="credits blue free">1</span></li>
+                                <li>uPub Starter Credit(s): <span class="credits blue starter">0</span></li>
+                                <li>uPub Free Credit(s): <span class="credits blue super">0</span></li>
+                            </ul>
+                            <a href="#" class="link-profile blue">Learn More</a>
+                        </div>
+                        
+                        <div class="pp-content">
+
+                            <div class="box-pp black-box unpublished">
+                                <h3 class="box-title">Published eBooks</h3>
+                                <a href="#" class="btn-all blue">back to CMS</a>
+
+                                <div class="box-content">
+                                    <div id="carousel-unpublished" class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="content-books">
+                                                    <div class="cover-container-list">
+                                                        <img src="../images/tortured-widow.png" alt="">
+                                                    </div>
+                                                    <div class="list-book-info">
+                                                        <h4>The Tortured Widow</h4>
+                                                        <h5>Clifford Manchester</h5>
+                                                        <span class="book-status blue">Published</span>
+                                                        <span class="sales-qty">100 sales</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="tooltip-book">
+                                                <h4>The Tortured Widow</h4>
+                                                <h5>Clifford Manchester</h5>
+                                                <div class="container-buttons">
+                                                    <a href="#" class="button pink">Publish</a>
+                                                    <a href="#" class="button green">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="content-books">
+                                                    <div class="cover-container-list">
+                                                        <img src="../images/killer-recipes.png" alt="">
+                                                    </div>
+                                                    <div class="list-book-info">
+                                                        <h4>Killer Recipes</h4>
+                                                        <h5>Clifford Manchester</h5>
+                                                        <span class="book-status blue">Published</span>
+                                                        <span class="sales-qty">100 sales</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="tooltip-book">
+                                                <h4>Killer Recipes</h4>
+                                                <h5>Clifford Manchester</h5>
+                                                <div class="container-buttons">
+                                                    <a href="#" class="button pink">Publish</a>
+                                                    <a href="#" class="button green">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="content-books">
+                                                    <div class="cover-container-list">
+                                                        <img src="../images/healthy-4-kids.png" alt="">
+                                                    </div>
+                                                    <div class="list-book-info">
+                                                        <h4>Healthy 4 Kids</h4>
+                                                        <h5>Clifford Manchester</h5>
+                                                        <span class="book-status blue">Published</span>
+                                                        <span class="sales-qty">100 sales</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="tooltip-book">
+                                                <h4>Healthy 4 Kids</h4>
+                                                <h5>Clifford Manchester</h5>
+                                                <div class="container-buttons">
+                                                    <a href="#" class="button pink">Publish</a>
+                                                    <a href="#" class="button green">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="content-books">
+                                                    <div class="cover-container-list">
+                                                        <img src="../images/the-politician.png" alt="">
+                                                    </div>
+                                                    <div class="list-book-info">
+                                                        <h4>The Politician</h4>
+                                                        <h5>Clifford Manchester</h5>
+                                                        <span class="book-status blue">Published</span>
+                                                        <span class="sales-qty">100 sales</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="tooltip-book">
+                                                <h4>The Politician</h4>
+                                                <h5>Clifford Manchester</h5>
+                                                <div class="container-buttons">
+                                                    <a href="#" class="button pink">Publish</a>
+                                                    <a href="#" class="button green">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="content-books">
+                                                    <div class="cover-container-list">
+                                                        <img src="../images/tortured-widow.png" alt="">
+                                                    </div>
+                                                    <div class="list-book-info">
+                                                        <h4>The Tortured Widow</h4>
+                                                        <h5>Clifford Manchester</h5>
+                                                        <span class="book-status blue">Published</span>
+                                                        <span class="sales-qty">100 sales</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="tooltip-book">
+                                                <h4>The Tortured Widow</h4>
+                                                <h5>Clifford Manchester</h5>
+                                                <div class="container-buttons">
+                                                    <a href="#" class="button pink">Publish</a>
+                                                    <a href="#" class="button green">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="content-books">
+                                                    <div class="cover-container-list">
+                                                        <img src="../images/killer-recipes.png" alt="">
+                                                    </div>
+                                                    <div class="list-book-info">
+                                                        <h4>Killer Recipes</h4>
+                                                        <h5>Clifford Manchester</h5>
+                                                        <span class="book-status blue">Published</span>
+                                                        <span class="sales-qty">100 sales</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="tooltip-book">
+                                                <h4>Killer Recipes</h4>
+                                                <h5>Clifford Manchester</h5>
+                                                <div class="container-buttons">
+                                                    <a href="#" class="button pink">Publish</a>
+                                                    <a href="#" class="button green">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="content-books">
+                                                    <div class="cover-container-list">
+                                                        <img src="../images/healthy-4-kids.png" alt="">
+                                                    </div>
+                                                    <div class="list-book-info">
+                                                        <h4>Healthy 4 Kids</h4>
+                                                        <h5>Clifford Manchester</h5>
+                                                        <span class="book-status blue">Published</span>
+                                                        <span class="sales-qty">100 sales</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="tooltip-book">
+                                                <h4>Healthy 4 Kids</h4>
+                                                <h5>Clifford Manchester</h5>
+                                                <div class="container-buttons">
+                                                    <a href="#" class="button pink">Publish</a>
+                                                    <a href="#" class="button green">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <div class="content-books">
+                                                    <div class="cover-container-list">
+                                                        <img src="../images/the-politician.png" alt="">
+                                                    </div>
+                                                    <div class="list-book-info">
+                                                        <h4>The Politician</h4>
+                                                        <h5>Clifford Manchester</h5>
+                                                        <span class="book-status blue">Published</span>
+                                                        <span class="sales-qty">100 sales</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="tooltip-book">
+                                                <h4>The Politician</h4>
+                                                <h5>Clifford Manchester</h5>
+                                                <div class="container-buttons">
+                                                    <a href="#" class="button pink">Publish</a>
+                                                    <a href="#" class="button green">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div id="footer" class="body2">
+                            
+                <div class="container">
+
+                    <div class="wundr-info-footer">
+                        <img src="http://www.wundrbooks.com/blog_temp/wundr_logo.png" alt="Wundr" />
+                        <p>
+                            Wundr is a group of technology leaders, designers and engineers dedicated to reinventing the world of publishing. We're playing a key role in helping transform books into engaging, interactive experiences through our digital publising platform.
+                        </p>
+                        <div id="copyright">
+                            <p>Copyright &copy; 2014 Wundr Software, Inc. All rights reserved.</p>
+                        </div>
+                    </div>
+
+                    <div class="wundr-links-footer">
+                        <div class="links-company clear-footer">
+                            <h2 class="clear-footer">Company</h2>
+                            <ul class="clear-footer">
+                                <li><a href="http://www.wundrbooks.com/about/">About Wundr</a></li>
+                                <li><a href="http://www.wundrbooks.com/coming_soon">Careers</a></li>
+                                <li><a href="http://www.wundrbooks.com/contact">Contact</a></li>
+                                <li><a href="http://www.wundrbooks.com/coming_soon">Custom book service</a></li>
+                                <li><a href="http://www.wundrbooks.com/terms_and_conditions">Terms and Conditions</a></li>
+                                <li><a href="http://www.wundrbooks.com/privacy_policy">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="links-community clear-footer">
+                            <h2 class="clear-footer">Community</h2>
+                            <ul class="clear-footer">
+                                <li><a href="http://blogs.wundrbooks.com/">Blog</a></li>
+                                <li><a href="http://www.wundrbooks.com/coming_soon">Forums</a></li>
+                                <li><a href="http://www.wundrbooks.com/coming_soon">Support</a></li>
+                                <li><a href="http://www.wundrbooks.com/coming_soon">Publishers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-right-container">
+                        <div class="share-buttons">
+                            <h2>Share</h2>
+                            <ul>
+                                <li class="share-face"><a href="http://www.facebook.com/pages/Wundr/240745489391838" target="_blank" title="Facebook"></a></li>
+                                <li class="share-twitter"><a href="https://twitter.com/wundrful" target="_blank" title="Twitter"></a></li>
+                                <li class="share-mail"><a href="mailto:?Subject=Check%20out%20Wundr&amp;Body=http://www.wundrbooks.com" title="E-mail"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="wundr-newsletter">
+                            <div id="mc_embed_signup">
+                                <h2>Subscribe to Wundr's Newsletter</h2>
+                                <form action="http://wundrbooks.us6.list-manage2.com/subscribe/post?u=056e241c704261f4a6cb550a8&amp;id=ddb0433687" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-form" target="_blank" novalidate>
+                                    <div class="mc-field-group">
+                                        <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_056e241c704261f4a6cb550a8_ddb0433687" tabindex="-1" value=""></div>
+                                    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button send-newsletter"></button>
+                                </form>
+                            </div>
+                            <!--End mc_embed_signup-->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /#footer  -->
+        </div>
+        <script type="text/javascript" src="/script/retina.js"></script>
+        <script type="text/javascript">
+
+            $(function(){
+
+                $('a#triggernav').click(function(){ 
+                    $('#top-navigation').toggleClass('shownav'); 
+                    $('#navigation').toggleClass('shownav'); 
+                    $('#header .searchform').toggleClass('hidenav'); 
+                    $(this).toggleClass('active'); 
+                    return false; 
+                }); 
+            });
+
+        </script>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-35760166-1']);
+          _gaq.push(['_setDomainName', 'wundrbooks.com']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        <script type="text/javascript">
+            var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='LNAME';ftypes[2]='text';
+            try {
+                var jqueryLoaded=jQuery;
+                jqueryLoaded=true;
+            } catch(err) {
+                var jqueryLoaded=false;
+            }
+            var head= document.getElementsByTagName('head')[0];
+            if (!jqueryLoaded) {
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js';
+                head.appendChild(script);
+                if (script.readyState && script.onload!==null){
+                    script.onreadystatechange= function () {
+                          if (this.readyState == 'complete') mce_preload_check();
+                    }    
+                }
+            }
+
+            var err_style = '';
+            try{
+                err_style = mc_custom_error_style;
+            } catch(e){
+                err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+            }
+            var head= document.getElementsByTagName('head')[0];
+            var style= document.createElement('style');
+            style.type= 'text/css';
+            if (style.styleSheet) {
+              style.styleSheet.cssText = err_style;
+            } else {
+              style.appendChild(document.createTextNode(err_style));
+            }
+            head.appendChild(style);
+            setTimeout('mce_preload_check();', 250);
+
+            var mce_preload_checks = 0;
+            function mce_preload_check(){
+                if (mce_preload_checks>40) return;
+                mce_preload_checks++;
+                try {
+                    var jqueryLoaded=jQuery;
+                } catch(err) {
+                    setTimeout('mce_preload_check();', 250);
+                    return;
+                }
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+                head.appendChild(script);
+                try {
+                    var validatorLoaded=$("#fake-form").validate({});
+                } catch(err) {
+                    setTimeout('mce_preload_check();', 250);
+                    return;
+                }
+                mce_init_form();
+            }
+            function mce_init_form(){
+                $(document).ready( function($) {
+                    var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+                    var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+                    $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+                    options = { 
+                        url: 'http://wundrbooks.us6.list-manage.com/subscribe/post-json?u=056e241c704261f4a6cb550a8&id=ddb0433687&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                        beforeSubmit: function(){
+                        $('#mce_tmp_error_msg').remove();
+                        $('.datefield','#mc_embed_signup').each(
+                        function(){
+                            var txt = 'filled';
+                            var fields = new Array();
+                            var i = 0;
+                            $(':text', this).each(function(){
+                                fields[i] = this;
+                                i++;
+                            });
+                            $(':hidden', this).each(function(){
+                                var bday = false;
+                                if (fields.length == 2){
+                                    bday = true;
+                                    fields[2] = {'value':1970};//trick birthdays into having years
+                                }
+                                if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                    this.value = '';
+                                } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                    this.value = '';
+                                } else {
+                                    if (/\[day\]/.test(fields[0].name)){
+                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                                           
+                                    } else {
+                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                    }
+                                }
+                            });
+                        });
+                        $('.phonefield-us','#mc_embed_signup').each(function(){
+                            var fields = new Array();
+                            var i = 0;
+                            $(':text', this).each(function(){
+                                fields[i] = this;
+                                i++;
+                            });
+                            $(':hidden', this).each(function(){
+                                if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
+                                    this.value = '';
+                                } else {
+                                    this.value = 'filled';
+                                }
+                            });
+                        });
+                        return mce_validator.form();
+                    }, 
+                    success: mce_success_cb
+                };
+                $('#mc-embedded-subscribe-form').ajaxForm(options);      
+            });
+            }
+            function mce_success_cb(resp){
+                console.log(resp);
+                $('#mce-success-response').hide();
+                $('#mce-error-response').hide();
+                if (resp.result=="success"){
+                    $('#mce-'+resp.result+'-response').show();
+                    $('#mce-'+resp.result+'-response').html(resp.msg);
+                    $('#mc-embedded-subscribe-form').each(function(){
+                        this.reset();
+                    });
+                } else {
+                    var index = -1;
+                    var msg;
+                    try {
+                        var parts = resp.msg.split(' - ',2);
+                        if (parts[1]==undefined){
+                            msg = resp.msg;
+                        } else {
+                            i = parseInt(parts[0]);
+                            if (i.toString() == parts[0]){
+                                index = parts[0];
+                                msg = parts[1];
+                            } else {
+                                index = -1;
+                                msg = resp.msg;
+                            }
+                        }
+                    } catch(e){
+                        index = -1;
+                        msg = resp.msg;
+                    }
+                    try{
+                        if (index== -1){
+                            $('#mce-'+resp.result+'-response').show();
+                            $('#mce-'+resp.result+'-response').html(msg);            
+                        } else {
+                            err_id = 'mce_tmp_error_msg';
+                            html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+                            
+                            var input_id = '#mc_embed_signup';
+                            var f = $(input_id);
+                            if (ftypes[index]=='address'){
+                                input_id = '#mce-'+fnames[index]+'-addr1';
+                                f = $(input_id).parent().parent().get(0);
+                            } else if (ftypes[index]=='date'){
+                                input_id = '#mce-'+fnames[index]+'-month';
+                                f = $(input_id).parent().parent().get(0);
+                            } else {
+                                input_id = '#mce-'+fnames[index];
+                                f = $().parent(input_id).get(0);
+                            }
+                            if (f){
+                                $(f).append(html);
+                                $(input_id).focus();
+                            } else {
+                                $('#mce-'+resp.result+'-response').show();
+                                $('#mce-'+resp.result+'-response').html(msg);
+                            }
+                        }
+                    } catch(e){
+                        $('#mce-'+resp.result+'-response').show();
+                        $('#mce-'+resp.result+'-response').html(msg);
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
